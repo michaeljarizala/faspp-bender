@@ -128,7 +128,7 @@ You may check the **[GET] Tag** documentation on Swagger (`/v1/docs/#/Tag/load_t
 
 # Structured Modeling & Serialization
 
-Data modeling/typing and serialization is primarily supported using [Pydantic](https://docs.pydantic.dev/latest/api/base_model/).
+Data modeling/typing and serialization are primarily supported using [Pydantic](https://docs.pydantic.dev/latest/api/base_model/).
 
 # Build & Deployment
 
