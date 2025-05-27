@@ -1,0 +1,35 @@
+services:
+  web:
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    container_name: ukiran
+    env_file: .env
+    depends_on:
+      - db
+    ports:
+      # - "${PORT:-30002}:${PORT:-30002}"
+      - "40002:40002"
+    volumes:
+      - .:/ukiran
+    networks:
+      - backend
+    
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    env_file: .env
+    ports:
+      - "5436:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+
+volumes:
+  pgdata:
+
+networks:
+  backend:
+    driver: bridge
