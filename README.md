@@ -144,3 +144,9 @@ This runs the app on `localhost:8000` by default, but the `--port` command may b
 ```
 uvicorn app.main:app --port=8001 --reload
 ```
+
+# API Documentation
+## Swagger
+Swagger documentation is accessible through `/v1/docs/`. API can be tested directly here on Swagger so you don't need to separately do them on API clients (e.g. Postman, Hoppscotch, etc.)
+## Redocly
+Documentation is also accessible using Redocly, through `/v1/redoc/`. Although, unlike Swagger, the Redocly version does not provide ability to execute endpoints for testing.
