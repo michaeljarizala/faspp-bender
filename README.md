@@ -133,3 +133,14 @@ Data modeling/typing and serialization are primarily supported using [Pydantic](
 # Build & Deployment
 
 The project implements containerization using [Docker](https://docs.docker.com/) for simpler, faster build, test, and deploy operations.
+
+# Running Development
+
+`uvicorn` is employed in this project, and a development environment may be ran like so:
+```
+uvicorn app.main:app
+```
+This runs the app on `localhost:8000` by default, but the `--port` command may be supplied if a specific port number is required. Additionally, `--reload` may be supplied to watch code changes. For example:
+```
+uvicorn app.main:app --port=8001 --reload
+```
