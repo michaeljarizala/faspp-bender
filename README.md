@@ -1,5 +1,3 @@
-description="""
-
 # Welcome to FaSPP Bender
 
 **FaSPP** is a boilerplate project using:
@@ -135,5 +133,3 @@ Data modeling/typing and serialization is primarily supported using [Pydantic](h
 # Build & Deployment
 
 The project implements containerization using [Docker](https://docs.docker.com/) for simpler, faster build, test, and deploy operations.
-
-"""
