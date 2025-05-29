@@ -1,11 +1,12 @@
 # Welcome to FaSPP Bender
 
-**FaSPP** is a boilerplate project using:
+**FaSPP** is a boilerplate project by **maikeruji** using:
 
 - **Fa**stAPI 🐍
 - **S**QLAlchemy 🗃️
 - **P**ostgreSQL 🐘
 - **P**ydantic ✅
+
 
 # About FaSPP Bender
 
