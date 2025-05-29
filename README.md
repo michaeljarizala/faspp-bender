@@ -134,6 +134,41 @@ Data modeling/typing and serialization are primarily supported using [Pydantic](
 
 The project implements containerization using [Docker](https://docs.docker.com/) for simpler, faster build, test, and deploy operations.
 
+# Dependencies
+
+In order to install and run this project, the following should be available in your machine:
+- **Python (3.13 or higher)**
+- **PostgreSQL (15 or higher)**
+
+# Installation
+
+## Create a virtual environment
+
+Create a virtual environment anywhere in your machine, then active it.
+
+```
+python -m venv /Documents/my-virtual-envs/faspp-venv
+```
+In this demo, we are assuming you have a folder called `my-virtual-envs` inside `Documents`, where you want to create and store your virtual environment. We use the `venv` command to create the environment.<br/>
+Finally, we activate the environment so any package installations are isolated here.<br/><br/>
+
+> **NOTE:**
+> Ensure you run your virtual environment everytime you work on the project using the above command.
+> You may deactivate the environment with `deactivate` command.
+>
+> ```
+> deactivate
+> ```
+
+## Install dependencies
+
+Install the required packages, as defined in `./requirements.txt`.
+```
+pip install -R requirements.txt
+```
+
+Once done, your project should be ready and can be ran.
+
 # Running Development
 
 `uvicorn` is employed in this project, and a development environment may be ran like so:
